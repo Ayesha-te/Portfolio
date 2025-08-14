@@ -4,7 +4,6 @@ import { MessageCircle, X } from 'lucide-react';
 const WhatsAppButton: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const whatsappNumber = '923144217577'; 
   const defaultMessage = encodeURIComponent(
     'Hi! I found your portfolio website and I\'m interested in discussing a project with you.'
   );
