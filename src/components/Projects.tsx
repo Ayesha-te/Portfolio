@@ -55,6 +55,38 @@ const Projects: React.FC = () => {
     },
     {
       id: 4,
+      title: 'Nexokart ',
+      description: 'Made an networking and E-commerce website for Nexokart.',
+      image: 'nexo.jpeg',
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+      liveUrl: 'https://www.nexokart.shop/',
+      githubUrl: '#',
+      category: 'Most Loved',
+      features: [
+        'Product catalog',
+        'Shopping cart functionality',
+        'Responsive design',
+        'User-friendly interface'
+      ]
+    },
+    {
+      id: 5,
+      title: 'Palm Homes Gujrat',
+      description: 'Made a real estate website for Palm Homes Gujrat.',
+      image: 'palms.jpeg',
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+      liveUrl: 'https://www.palmhomesgujrat.com/',
+      githubUrl: '#',
+      category: 'Most Loved',
+      features: [
+        'Property listings',
+        'Modern layout',
+        'Contact forms',
+        'Mobile responsive'
+      ]
+    },
+    {
+      id: 6,
       title: 'Food Ordering Website',
       description: 'Food Ordering website made with HTML, CSS and JS.',
       image: 'food.png',
@@ -69,7 +101,7 @@ const Projects: React.FC = () => {
       ]
     },
     {
-      id: 5,
+      id: 7,
       title: 'E-Shop Storefront',
       description: 'Amazon-style e-commerce site with product cards, categories, cart, and user login. Fully mobile responsive.',
       image: 'store.png',
@@ -84,7 +116,7 @@ const Projects: React.FC = () => {
       ]
     },
     {
-      id: 6,
+      id: 8,
       title: 'Airline Company UI',
       description: 'Custom airline company dashboard built with HTML, CSS and JS.',
       image: 'airline.png',
@@ -99,7 +131,7 @@ const Projects: React.FC = () => {
       ]
     },
     {
-      id: 7,
+      id: 9,
       title: 'University Website',
       description: 'University website with all content of University.',
       image: 'uni.png',
@@ -114,7 +146,7 @@ const Projects: React.FC = () => {
       ]
     },
     {
-      id: 8,
+      id: 10,
       title: 'TODO App',
       description: 'TODO list and Task website for students.',
       image: 'todo.png',
@@ -129,7 +161,7 @@ const Projects: React.FC = () => {
       ]
     },
     {
-      id: 9,
+      id: 11,
       title: 'Brands Website',
       description: 'Made a website for brands with categories.',
       image: 'brands.png',
@@ -144,7 +176,7 @@ const Projects: React.FC = () => {
       ]
     },
     {
-      id: 10,
+      id: 12,
       title: 'AI Resume Screener',
       description: 'Automatically screens and ranks resumes using OpenAI.',
       image: 'rsum.jpg',
@@ -159,7 +191,7 @@ const Projects: React.FC = () => {
       ]
     },
     {
-      id: 11,
+      id: 13,
       title: 'AI Code Review Bot',
       description: 'Reviews code and gives improvements and scores.',
       image: 'code.jpg',
@@ -174,7 +206,7 @@ const Projects: React.FC = () => {
       ]
     },
     {
-      id: 12,
+      id: 14,
       title: 'AI Customer Support Chatbot',
       description: 'Smart chatbot that answers customer FAQs and general queries. Helps reduce manual support tasks.',
       image: 'chatbot.jpg',
@@ -189,7 +221,7 @@ const Projects: React.FC = () => {
       ]
     },
     {
-      id: 13,
+      id: 15,
       title: 'AI Trading Assistant',
       description: 'Provides real-time stock market insights and analysis. Useful for traders and finance analysts.',
       image: 'trading.jpg',
@@ -204,7 +236,7 @@ const Projects: React.FC = () => {
       ]
     },
     {
-      id: 14,
+      id: 16,
       title: 'AI PDF Search Assistant',
       description: 'Lets users ask questions from PDFs using LangChain + OpenAI. Saves time reading long documents.',
       image: 'pdf powered.jpg',
@@ -219,7 +251,7 @@ const Projects: React.FC = () => {
       ]
     },
     {
-      id: 15,
+      id: 17,
       title: 'AI Research Assistant',
       description: 'Answers research-based queries using Google Search and LLMs. Designed for students and researchers.',
       image: 'research2.jpg',
@@ -234,7 +266,7 @@ const Projects: React.FC = () => {
       ]
     },
     {
-      id: 16,
+      id: 18,
       title: 'AI Legal Document Analyzer',
       description: 'Simulates answers based on legal documents provided. Perfect for job seekers and law students.',
       image: 'ann.jpg',
@@ -249,7 +281,7 @@ const Projects: React.FC = () => {
       ]
     },
     {
-      id: 17,
+      id: 19,
       title: 'AI LangChain AutoGPT',
       description: 'Generates YouTube video titles and scripts from user input with an interactive Streamlit UI.',
       image: 'research.jpg',
@@ -264,7 +296,7 @@ const Projects: React.FC = () => {
       ]
     },
     {
-      id: 18,
+      id: 20,
       title: 'Multi-Agent AI Assistant',
       description: 'Combines multiple AI agents to answer complex queries. A powerful tool for multi-step tasks.',
       image: 'q_A.jpg',
@@ -279,7 +311,7 @@ const Projects: React.FC = () => {
       ]
     },
     {
-      id: 19,
+      id: 21,
       title: 'Prompt Engineering Playground',
       description: 'Test and tweak prompts in real-time to learn prompt engineering. Built using OpenAI API and Streamlit.',
       image: 'prompt.jpg',
@@ -294,7 +326,7 @@ const Projects: React.FC = () => {
       ]
     },
     {
-      id: 20,
+      id: 22,
       title: 'Room Graphic Design',
       description: 'Promotional design created.',
       image: 'adss.jpg',
@@ -309,7 +341,7 @@ const Projects: React.FC = () => {
       ]
     },
     {
-      id: 21,
+      id: 23,
       title: 'KFC Marketing Banner',
       description: 'Fast-food promotional graphic for KFC.',
       image: 'kfc.jpg',
@@ -324,7 +356,7 @@ const Projects: React.FC = () => {
       ]
     },
     {
-      id: 22,
+      id: 24,
       title: 'Marketing 2Design',
       description: 'Retail market promotional visual.',
       image: 'market 2.jpg',
@@ -339,7 +371,7 @@ const Projects: React.FC = () => {
       ]
     },
     {
-      id: 23,
+      id: 25,
       title: 'Market  Design',
       description: 'Alternate retail market creative variation.',
       image: 'market (2).jpg',
@@ -354,7 +386,7 @@ const Projects: React.FC = () => {
       ]
     },
     {
-      id: 24,
+      id: 26,
       title: 'Furniture Catalog',
       description: 'Elegant furniture catalog spread.',
       image: 'Furniture.jpg',
@@ -369,7 +401,7 @@ const Projects: React.FC = () => {
       ]
     },
     {
-      id: 25,
+      id: 27,
       title: 'Stationary Set',
       description: 'Stationary set design concept.',
       image: 'Stationary.jpg',
