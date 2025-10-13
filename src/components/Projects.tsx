@@ -327,6 +327,21 @@ const Projects: React.FC = () => {
     },
     {
       id: 22,
+      title: 'Company Future Predictor',
+      description: 'Predicts company future trends and insights using AI-powered analysis. Helps businesses make data-driven decisions.',
+      image: 'trading.jpg',
+      technologies: ['Python', 'Streamlit', 'OpenAI'],
+      liveUrl: 'https://dyanyrpkmewmpxucjujcov.streamlit.app/',
+      githubUrl: '#',
+      category: ' LLMs',
+      features: [
+        'Future trend analysis',
+        'Business insights',
+        'Data-driven predictions'
+      ]
+    },
+    {
+      id: 23,
       title: 'Room Graphic Design',
       description: 'Promotional design created.',
       image: 'adss.jpg',
@@ -341,7 +356,7 @@ const Projects: React.FC = () => {
       ]
     },
     {
-      id: 23,
+      id: 24,
       title: 'KFC Marketing Banner',
       description: 'Fast-food promotional graphic for KFC.',
       image: 'kfc.jpg',
@@ -356,7 +371,7 @@ const Projects: React.FC = () => {
       ]
     },
     {
-      id: 24,
+      id: 25,
       title: 'Marketing 2Design',
       description: 'Retail market promotional visual.',
       image: 'market 2.jpg',
@@ -371,7 +386,7 @@ const Projects: React.FC = () => {
       ]
     },
     {
-      id: 25,
+      id: 26,
       title: 'Market  Design',
       description: 'Alternate retail market creative variation.',
       image: 'market (2).jpg',
@@ -386,7 +401,7 @@ const Projects: React.FC = () => {
       ]
     },
     {
-      id: 26,
+      id: 27,
       title: 'Furniture Catalog',
       description: 'Elegant furniture catalog spread.',
       image: 'Furniture.jpg',
@@ -401,7 +416,7 @@ const Projects: React.FC = () => {
       ]
     },
     {
-      id: 27,
+      id: 28,
       title: 'Stationary Set',
       description: 'Stationary set design concept.',
       image: 'Stationary.jpg',
