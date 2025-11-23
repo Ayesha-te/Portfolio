@@ -177,6 +177,52 @@ const Projects: React.FC = () => {
       ]
     },
     {
+      id: 29,
+      title: 'Rocket Style Forge',
+      description: 'Camera-focused website showcasing products and specs.',
+      image: 'j1.png',
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+      liveUrl: 'https://rocket-style-forge.vercel.app/',
+      githubUrl: '#',
+      category: 'Samples',
+      features: [
+        'Product gallery',
+        'Responsive product pages',
+        'Search and filters'
+      ]
+    },
+    {
+      id: 30,
+      title: 'Real Estate (Virid)',
+      description: 'Real estate demo showcasing listings and property details.',
+      image: 'j2.png',
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+      liveUrl: 'https://real-estate-nine-virid-74.vercel.app/',
+      githubUrl: '#',
+      category: 'Samples',
+      features: [
+        'Property listings',
+        'Contact/lead capture',
+        'Responsive layouts'
+      ]
+    },
+    {
+      id: 31,
+      title: 'RES Dusky',
+      description: 'Real estate site example with modern UI and listing pages.',
+      image: 'j3.png',
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+      liveUrl: 'https://res-dusky.vercel.app/',
+      githubUrl: '#',
+      category: 'Samples',
+      features: [
+        'Listings grid',
+        'Property detail pages',
+        'Mobile-first design'
+      ]
+    }
+    ,
+    {
       id: 12,
       title: 'AI Resume Screener',
       description: 'Automatically screens and ranks resumes using OpenAI.',
@@ -431,52 +477,8 @@ const Projects: React.FC = () => {
         'High-res export'
       ]
     }
-    ,
-    {
-      id: 29,
-      title: 'Rocket Style Forge',
-      description: 'Camera-focused website showcasing products and specs.',
-      image: 'j1.png',
-      technologies: ['HTML', 'CSS', 'JavaScript'],
-      liveUrl: 'https://rocket-style-forge.vercel.app/',
-      githubUrl: '#',
-      category: 'Samples',
-      features: [
-        'Product gallery',
-        'Responsive product pages',
-        'Search and filters'
-      ]
-    },
-    {
-      id: 30,
-      title: 'Real Estate (Virid)',
-      description: 'Real estate demo showcasing listings and property details.',
-      image: 'j2.png',
-      technologies: ['HTML', 'CSS', 'JavaScript'],
-      liveUrl: 'https://real-estate-nine-virid-74.vercel.app/',
-      githubUrl: '#',
-      category: 'Samples',
-      features: [
-        'Property listings',
-        'Contact/lead capture',
-        'Responsive layouts'
-      ]
-    },
-    {
-      id: 31,
-      title: 'RES Dusky',
-      description: 'Real estate site example with modern UI and listing pages.',
-      image: 'j3.png',
-      technologies: ['HTML', 'CSS', 'JavaScript'],
-      liveUrl: 'https://res-dusky.vercel.app/',
-      githubUrl: '#',
-      category: 'Samples',
-      features: [
-        'Listings grid',
-        'Property detail pages',
-        'Mobile-first design'
-      ]
-    }
+    
+   
   ];
 
   const categories = ['All', 'Most Loved', 'Samples', ' LLMs', 'Graphics'];
