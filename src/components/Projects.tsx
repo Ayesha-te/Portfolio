@@ -76,7 +76,7 @@ const Projects: React.FC = () => {
       description: 'Made a real estate website for Palm Homes Gujrat.',
       image: 'palms.jpeg',
       technologies: ['HTML', 'CSS', 'JavaScript'],
-      liveUrl: 'https://www.palmhomesgujrat.com/',
+      liveUrl: 'https://www.kunjwalcity.pk/',
       githubUrl: '#',
       category: 'Most Loved',
       features: [
