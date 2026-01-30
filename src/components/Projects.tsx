@@ -87,6 +87,22 @@ const Projects: React.FC = () => {
       ]
     },
     {
+      id: 24,
+      title: 'EVERKIND Home Support Ltd',
+      description: 'Developed a professional website for EVERKIND Home Support Ltd, focusing on home care and support services.',
+      image: 'everkind.png',
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+      liveUrl: 'https://www.everkindhc.co.uk/',
+      githubUrl: '#',
+      category: 'Most Loved',
+      features: [
+        'Modern responsive layout',
+        'Care services showcase',
+        'Professional branding',
+        'Contact and support info'
+      ]
+    },
+    {
       id: 6,
       title: 'Food Ordering Website',
       description: 'Food Ordering website made with HTML, CSS and JS.',
