@@ -116,7 +116,8 @@ const Projects: React.FC = () => {
         'Add to cart UX',
         'Responsive design'
       ]
-    },
+      
+    },  
     {
       id: 7,
       title: 'E-Shop Storefront',
