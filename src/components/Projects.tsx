@@ -116,6 +116,7 @@ const Projects: React.FC = () => {
         'Add to cart UX',
         'Responsive design'
       ]
+           
       
     },  
     {
