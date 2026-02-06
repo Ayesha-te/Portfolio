@@ -103,6 +103,54 @@ const Projects: React.FC = () => {
       ]
     },
     {
+      id: 32,
+      title: 'Ultamine Pro Hub',
+      description: 'Investment application for managing and tracking investments.',
+      image: 'ultamine.png',
+      technologies: ['React', 'Tailwind CSS', 'TypeScript'],
+      liveUrl: 'https://ultamine-pro-hub.vercel.app/',
+      githubUrl: '#',
+      category: 'Most Loved',
+      features: [
+        'Investment tracking',
+        'User dashboard',
+        'Secure transactions',
+        'Responsive design'
+      ]
+    },
+    {
+      id: 33,
+      title: 'Dynami Furnish',
+      description: 'Furniture website for a Dubai-based company showcasing elegant designs.',
+      image: 'dynamic.png',
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+      liveUrl: 'https://dynamifurnish.vercel.app/',
+      githubUrl: '#',
+      category: 'Most Loved',
+      features: [
+        'Product catalog',
+        'Modern design',
+        'Dubai-based business showcase',
+        'Mobile responsive'
+      ]
+    },
+    {
+      id: 34,
+      title: 'House of Serene',
+      description: 'WordPress e-commerce site for high-end home decor and furniture.',
+      image: 'house.png',
+      technologies: ['WordPress', 'WooCommerce', 'PHP'],
+      liveUrl: 'https://house-of-serene.raisaaz.com/',
+      githubUrl: '#',
+      category: 'Most Loved',
+      features: [
+        'E-commerce functionality',
+        'WordPress powered',
+        'Product management',
+        'Secure checkout'
+      ]
+    },
+    {
       id: 6,
       title: 'Food Ordering Website',
       description: 'Food Ordering website made with HTML, CSS and JS.',
