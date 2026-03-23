@@ -71,6 +71,22 @@ const Projects: React.FC = () => {
       ]
     },
     {
+      id: 35,
+      title: 'Nexo MLM Website',
+      description: 'Built a specialized Multi-Level Marketing (MLM) platform for Nexokart.',
+      image: 'nexo3.png',
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+      liveUrl: 'https://www.nexocart.online/dashboard',
+      githubUrl: '#',
+      category: 'Most Loved',
+      features: [
+        'MLM Dashboard',
+        'User management',
+        'Earnings tracking',
+        'Network visualization'
+      ]
+    },
+    {
       id: 5,
       title: 'Palm Homes Gujrat',
       description: 'Made a real estate website for Palm Homes Gujrat.',
