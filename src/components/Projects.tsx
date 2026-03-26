@@ -485,7 +485,7 @@ const Projects: React.FC = () => {
       ]
     },
     {
-      id: 24,
+      id: 36,
       title: 'KFC Marketing Banner',
       description: 'Fast-food promotional graphic for KFC.',
       image: 'kfc.jpg',
