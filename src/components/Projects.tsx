@@ -134,22 +134,7 @@ const Projects: React.FC = () => {
         'Responsive design'
       ]
     },
-    {
-      id: 33,
-      title: 'Dynami Furnish',
-      description: 'Furniture website for a Dubai-based company showcasing elegant designs.',
-      image: 'dynamic.png',
-      technologies: ['HTML', 'CSS', 'JavaScript'],
-      liveUrl: 'https://dynamifurnish.vercel.app/',
-      githubUrl: '#',
-      category: 'Most Loved',
-      features: [
-        'Product catalog',
-        'Modern design',
-        'Dubai-based business showcase',
-        'Mobile responsive'
-      ]
-    },
+    
     {
       id: 34,
       title: 'House of Serene',
