@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const SkillsSlider: React.FC = () => {
@@ -9,14 +9,20 @@ const SkillsSlider: React.FC = () => {
     {
       title: 'Frontend Mastery',
       description: 'Building responsive, interactive user interfaces with modern frameworks',
-      skills: ['React', 'HTML', 'TailwindCSS', 'JavaScript'],
+      skills: ['React', 'HTML', 'Tailwind CSS', 'JavaScript'],
       gradient: 'from-blue-500 to-purple-600'
     },
     {
       title: 'Backend Excellence',
       description: 'Scalable server-side solutions and robust API development',
-      skills: ['FastAPI', 'Python', 'Chatbots', 'RESTAPIs', 'Django'],
+      skills: ['FastAPI', 'Python', 'Django', '.NET', 'PHP'],
       gradient: 'from-green-500 to-blue-600'
+    },
+    {
+      title: 'Desktop Development',
+      description: 'Building desktop applications and working efficiently with Microsoft tooling',
+      skills: ['Visual Studio', 'Windows Forms', 'C#', '.NET', 'MySQL'],
+      gradient: 'from-cyan-500 to-indigo-600'
     },
     {
       title: 'AI Integration',
@@ -59,9 +65,8 @@ const SkillsSlider: React.FC = () => {
 
   return (
     <div className="relative max-w-4xl mx-auto">
-      {/* Main Slider */}
       <div className="relative overflow-hidden rounded-2xl bg-gray-800/50 backdrop-blur-sm border border-gray-700/50">
-        <div 
+        <div
           className="flex transition-transform duration-500 ease-in-out"
           style={{ transform: `translateX(-${currentSlide * 100}%)` }}
         >
@@ -72,7 +77,7 @@ const SkillsSlider: React.FC = () => {
                 <p className="text-gray-400 text-lg mb-8 max-w-2xl mx-auto">
                   {slide.description}
                 </p>
-                
+
                 <div className="flex flex-wrap justify-center gap-3">
                   {slide.skills.map((skill, skillIndex) => (
                     <span
@@ -88,14 +93,13 @@ const SkillsSlider: React.FC = () => {
           ))}
         </div>
 
-        {/* Navigation Arrows */}
         <button
           onClick={prevSlide}
           className="absolute left-4 top-1/2 transform -translate-y-1/2 p-2 rounded-full bg-gray-800/80 hover:bg-gray-700/80 transition-colors duration-300"
         >
           <ChevronLeft className="w-6 h-6" />
         </button>
-        
+
         <button
           onClick={nextSlide}
           className="absolute right-4 top-1/2 transform -translate-y-1/2 p-2 rounded-full bg-gray-800/80 hover:bg-gray-700/80 transition-colors duration-300"
@@ -104,7 +108,6 @@ const SkillsSlider: React.FC = () => {
         </button>
       </div>
 
-      {/* Dots Indicator */}
       <div className="flex justify-center mt-6 space-x-2">
         {slides.map((_, index) => (
           <button
@@ -119,7 +122,6 @@ const SkillsSlider: React.FC = () => {
         ))}
       </div>
 
-      {/* Progress Bar */}
       <div className="mt-4 w-full bg-gray-700 rounded-full h-1">
         <div
           className="bg-gradient-to-r from-purple-500 to-cyan-500 h-1 rounded-full transition-all duration-300"

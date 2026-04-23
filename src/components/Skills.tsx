@@ -6,29 +6,39 @@ const Skills: React.FC = () => {
     {
       title: 'Frontend Development',
       skills: [
-        { name: 'React', level: 95, icon: '⚛️' },
-        { name: 'HTML', level: 95, icon: '🔷' },
-        { name: 'JavaScript', level: 85, icon: '▲' },
-        { name: 'Tailwind CSS', level: 92, icon: '🎨' },
-        
+        { name: 'React', level: 95, icon: 'UI' },
+        { name: 'HTML', level: 95, icon: 'FE' },
+        { name: 'JavaScript', level: 85, icon: 'JS' },
+        { name: 'Tailwind CSS', level: 92, icon: 'TW' }
       ]
     },
     {
       title: 'Backend & APIs',
       skills: [
-        { name: 'FastAPI', level: 88, icon: '🟢' },
-        { name: 'Python', level: 85, icon: '🐍' },
-        { name: 'Django', level: 82, icon: '📊' },
-        { name: 'REST APIs', level: 90, icon: '🔗' },
-             ]
+        { name: 'FastAPI', level: 88, icon: 'API' },
+        { name: 'Python', level: 85, icon: 'PY' },
+        { name: 'Django', level: 82, icon: 'DJ' },
+        { name: '.NET', level: 84, icon: '.N' },
+        { name: 'PHP', level: 80, icon: 'PH' },
+        { name: 'REST APIs', level: 90, icon: 'RS' }
+      ]
+    },
+    {
+      title: 'Desktop & Tools',
+      skills: [
+        { name: 'Visual Studio', level: 88, icon: 'VS' },
+        { name: 'Windows Forms', level: 82, icon: 'WF' },
+        { name: 'MySQL', level: 80, icon: 'DB' },
+        { name: 'Git & GitHub', level: 90, icon: 'GH' }
+      ]
     },
     {
       title: 'AI & LLM',
       skills: [
-        { name: 'OpenAI API & LangChain', level: 98, icon: '🤖 🔗' },
-        { name: 'Vector Databases', level: 85, icon: '🗄️' },
-        { name: 'Prompt Engineering', level: 90, icon: '💭' },
-        { name: 'ML Integration', level: 80, icon: '🧠' }
+        { name: 'OpenAI API & LangChain', level: 98, icon: 'AI' },
+        { name: 'Vector Databases', level: 85, icon: 'VD' },
+        { name: 'Prompt Engineering', level: 90, icon: 'PE' },
+        { name: 'ML Integration', level: 80, icon: 'ML' }
       ]
     }
   ];
@@ -48,14 +58,12 @@ const Skills: React.FC = () => {
           </p>
         </div>
 
-        {/* Skills Slider Component */}
         <div className="mb-16">
           <SkillsSlider />
         </div>
 
-        {/* Detailed Skills Grid */}
         <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-3 gap-8">
+          <div className="grid lg:grid-cols-2 xl:grid-cols-4 gap-8">
             {skillCategories.map((category, categoryIndex) => (
               <div
                 key={categoryIndex}
@@ -64,18 +72,20 @@ const Skills: React.FC = () => {
                 <h3 className="text-2xl font-bold mb-6 text-center bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
                   {category.title}
                 </h3>
-                
+
                 <div className="space-y-4">
                   {category.skills.map((skill, skillIndex) => (
                     <div key={skillIndex} className="group">
                       <div className="flex items-center justify-between mb-2">
                         <div className="flex items-center space-x-2">
-                          <span className="text-2xl">{skill.icon}</span>
+                          <span className="text-sm font-semibold text-cyan-300 min-w-8">
+                            {skill.icon}
+                          </span>
                           <span className="font-medium">{skill.name}</span>
                         </div>
                         <span className="text-sm text-gray-400">{skill.level}%</span>
                       </div>
-                      
+
                       <div className="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
                         <div
                           className="h-full bg-gradient-to-r from-purple-500 to-cyan-500 rounded-full transition-all duration-1000 ease-out transform origin-left group-hover:scale-x-110"
@@ -90,10 +100,8 @@ const Skills: React.FC = () => {
           </div>
         </div>
 
-        {/* Additional Stats */}
         <div className="mt-16 grid md:grid-cols-4 gap-6">
           {[
-           
             { number: '2+', label: 'Years Experience' },
             { number: '10+', label: 'Technologies Mastered' },
             { number: '98%', label: 'Client Satisfaction' },
