@@ -1,11 +1,36 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { ExternalLink, X } from 'lucide-react';
 
+const ALL_CATEGORY = 'All';
+const MOST_LOVED_CATEGORY = 'Most Loved';
+const TOP_PROJECTS_HASH = '#top-projects';
+
+const getInitialCategory = () =>
+  typeof window !== 'undefined' && window.location.hash === TOP_PROJECTS_HASH
+    ? MOST_LOVED_CATEGORY
+    : ALL_CATEGORY;
 
 const Projects: React.FC = () => {
   const [selectedProject, setSelectedProject] = useState<number | null>(null);
+  const [activeCategory, setActiveCategory] = useState(getInitialCategory);
 
   const projects = [
+    {
+      id: 37,
+      title: 'Reve Living',
+      description: 'Built a large luxury e-commerce website for Reve Living, focused on handcrafted beds and mattresses with cookie consent, tracking integrations, and a polished shopping journey.',
+      image: 'reve.png',
+      technologies: ['React', 'Vite', 'Cookiebot'],
+      liveUrl: 'https://www.reveliving.co.uk/',
+      githubUrl: '#',
+      category: MOST_LOVED_CATEGORY,
+      features: [
+        'Large e-commerce storefront',
+        'Luxury beds and mattresses catalog',
+        'Cookie consent and privacy flow',
+        'Analytics-ready shopping experience'
+      ]
+    },
     {
       id: 1,
       title: 'Gotbae Agency Website',
@@ -14,7 +39,7 @@ const Projects: React.FC = () => {
       technologies: ['HTML', 'CSS', 'JavaScript'],
       liveUrl: 'https://www.gotbae.com/',
       githubUrl: '#',
-      category: 'Most Loved',
+      category: MOST_LOVED_CATEGORY,
       features: [
         'Modern responsive layout',
         'Services showcase',
@@ -30,7 +55,7 @@ const Projects: React.FC = () => {
       technologies: ['HTML', 'CSS', 'JavaScript'],
       liveUrl: 'https://www.access-auto-services.co.uk/',
       githubUrl: '#',
-      category: 'Most Loved',
+      category: MOST_LOVED_CATEGORY,
       features: [
         'Booking and services info',
         'Mobile-friendly UI',
@@ -46,7 +71,7 @@ const Projects: React.FC = () => {
       technologies: ['HTML', 'CSS', 'JavaScript'],
       liveUrl: 'https://www.geniusestimate.com/',
       githubUrl: '#',
-      category: 'Most Loved',
+      category: MOST_LOVED_CATEGORY,
       features: [
         'Service overview',
         'Contact/inquiry',
@@ -62,7 +87,7 @@ const Projects: React.FC = () => {
       technologies: ['HTML', 'CSS', 'JavaScript'],
       liveUrl: 'https://www.nexokart.shop/',
       githubUrl: '#',
-      category: 'Most Loved',
+      category: MOST_LOVED_CATEGORY,
       features: [
         'Product catalog',
         'Shopping cart functionality',
@@ -78,7 +103,7 @@ const Projects: React.FC = () => {
       technologies: ['HTML', 'CSS', 'JavaScript'],
       liveUrl: 'https://www.nexocart.online/dashboard',
       githubUrl: '#',
-      category: 'Most Loved',
+      category: MOST_LOVED_CATEGORY,
       features: [
         'MLM Dashboard',
         'User management',
@@ -94,7 +119,7 @@ const Projects: React.FC = () => {
       technologies: ['HTML', 'CSS', 'JavaScript'],
       liveUrl: 'https://www.kunjwalcity.pk/',
       githubUrl: '#',
-      category: 'Most Loved',
+      category: MOST_LOVED_CATEGORY,
       features: [
         'Property listings',
         'Modern layout',
@@ -110,7 +135,7 @@ const Projects: React.FC = () => {
       technologies: ['HTML', 'CSS', 'JavaScript'],
       liveUrl: 'https://www.everkindhc.co.uk/',
       githubUrl: '#',
-      category: 'Most Loved',
+      category: MOST_LOVED_CATEGORY,
       features: [
         'Modern responsive layout',
         'Care services showcase',
@@ -126,7 +151,7 @@ const Projects: React.FC = () => {
       technologies: ['React', 'Tailwind CSS', 'TypeScript'],
       liveUrl: 'https://ultamine-pro-hub.vercel.app/',
       githubUrl: '#',
-      category: 'Most Loved',
+      category: MOST_LOVED_CATEGORY,
       features: [
         'Investment tracking',
         'User dashboard',
@@ -143,7 +168,7 @@ const Projects: React.FC = () => {
       technologies: ['WordPress', 'WooCommerce', 'PHP'],
       liveUrl: 'https://house-of-serene.raisaaz.com/',
       githubUrl: '#',
-      category: 'Most Loved',
+      category: MOST_LOVED_CATEGORY,
       features: [
         'E-commerce functionality',
         'WordPress powered',
@@ -548,15 +573,41 @@ const Projects: React.FC = () => {
    
   ];
 
-  const categories = ['All', 'Most Loved', 'Samples', ' LLMs', 'Graphics'];
-  const [activeCategory, setActiveCategory] = useState('All');
+  useEffect(() => {
+    const syncCategoryWithHash = () => {
+      if (window.location.hash === TOP_PROJECTS_HASH) {
+        setActiveCategory(MOST_LOVED_CATEGORY);
+        return;
+      }
 
-  const filteredProjects = activeCategory === 'All' 
+      if (window.location.hash === '#projects') {
+        setActiveCategory(ALL_CATEGORY);
+      }
+    };
+
+    syncCategoryWithHash();
+    window.addEventListener('hashchange', syncCategoryWithHash);
+    return () => window.removeEventListener('hashchange', syncCategoryWithHash);
+  }, []);
+
+  const categories = [ALL_CATEGORY, MOST_LOVED_CATEGORY, 'Samples', ' LLMs', 'Graphics'];
+
+  const handleCategoryChange = (category: string) => {
+    setActiveCategory(category);
+
+    if (typeof window !== 'undefined') {
+      const nextHash = category === MOST_LOVED_CATEGORY ? TOP_PROJECTS_HASH : '#projects';
+      window.history.replaceState(null, '', nextHash);
+    }
+  };
+
+  const filteredProjects = activeCategory === ALL_CATEGORY 
     ? projects 
     : projects.filter(project => project.category === activeCategory);
 
   return (
     <section id="projects" className="py-20 relative">
+      <div id="top-projects" className="absolute -top-24" aria-hidden="true" />
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
@@ -575,7 +626,7 @@ const Projects: React.FC = () => {
           {categories.map((category) => (
             <button
               key={category}
-              onClick={() => setActiveCategory(category)}
+              onClick={() => handleCategoryChange(category)}
               className={`px-6 py-2 rounded-full font-medium transition-all duration-300 ${
                 activeCategory === category
                   ? 'bg-gradient-to-r from-purple-600 to-cyan-600 text-white'

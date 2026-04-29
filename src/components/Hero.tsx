@@ -83,6 +83,14 @@ const Hero: React.FC = () => {
     View My Work
   </a>
 
+  {/* Top Projects */}
+  <a
+    href="#top-projects"
+    className="px-8 py-4 border-2 border-purple-500/50 rounded-full text-white font-semibold hover:border-cyan-400 hover:text-cyan-400 transition-all duration-300"
+  >
+    Top Projects
+  </a>
+
   {/* Download CV */}
   <a
     href={MyCV}
