@@ -15,6 +15,9 @@ const Skills: React.FC = () => {
     {
       title: 'Backend & APIs',
       skills: [
+        { name: 'Node.js', level: 88, icon: 'ND' },
+        { name: 'Express.js', level: 86, icon: 'EX' },
+        { name: 'MongoDB', level: 84, icon: 'MG' },
         { name: 'FastAPI', level: 88, icon: 'API' },
         { name: 'Python', level: 85, icon: 'PY' },
         { name: 'Django', level: 82, icon: 'DJ' },

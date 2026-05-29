@@ -57,7 +57,8 @@ const About: React.FC = () => {
               <p className="text-gray-400 text-lg leading-relaxed">
                 I'm a dedicated web developer with over 2 years of experience creating 
                 modern, scalable applications. My expertise spans from front-end frameworks 
-                like React to back-end technologies including Django and FastAPI.
+                like React to back-end technologies including Node.js, Express.js, MongoDB,
+                Django, and FastAPI.
               </p>
               <p className="text-gray-400 text-lg leading-relaxed">
                 Recently, I've been diving deep into the world of Large Language Models 

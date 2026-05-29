@@ -15,7 +15,7 @@ const SkillsSlider: React.FC = () => {
     {
       title: 'Backend Excellence',
       description: 'Scalable server-side solutions and robust API development',
-      skills: ['FastAPI', 'Python', 'Django', '.NET', 'PHP'],
+      skills: ['Node.js', 'Express.js', 'MongoDB', 'FastAPI', 'Django'],
       gradient: 'from-green-500 to-blue-600'
     },
     {
