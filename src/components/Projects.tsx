@@ -16,6 +16,22 @@ const Projects: React.FC = () => {
 
   const projects = [
     {
+      id: 38,
+      title: 'Texvera',
+      description: 'Built a professional textile sourcing website for Texvera, connecting global brands with trusted textile manufacturers across Pakistan.',
+      image: 'taxvera.png',
+      technologies: ['Business Website', 'Responsive Design', 'Textile Sourcing'],
+      liveUrl: 'https://www.texvera.com/',
+      githubUrl: '#',
+      category: MOST_LOVED_CATEGORY,
+      features: [
+        'Textile sourcing brand presence',
+        'Product categories for linen, apparel, and denim',
+        'Trust-focused company messaging',
+        'Contact and inquiry journey'
+      ]
+    },
+    {
       id: 37,
       title: 'Reve Living',
       description: 'Built a large luxury e-commerce website for Reve Living, focused on handcrafted beds and mattresses with cookie consent, tracking integrations, and a polished shopping journey.',
