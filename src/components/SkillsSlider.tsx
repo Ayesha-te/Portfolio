@@ -9,8 +9,14 @@ const SkillsSlider: React.FC = () => {
     {
       title: 'Frontend Mastery',
       description: 'Building responsive, interactive user interfaces with modern frameworks',
-      skills: ['React', 'HTML', 'Tailwind CSS', 'JavaScript'],
+      skills: ['React', 'HTML', 'Tailwind CSS', 'JavaScript', 'WordPress'],
       gradient: 'from-blue-500 to-purple-600'
+    },
+    {
+      title: 'CMS & E-commerce',
+      description: 'Creating content-driven business sites and online stores with WordPress tooling',
+      skills: ['WordPress', 'WooCommerce', 'PHP', 'Responsive Design', 'Site Management'],
+      gradient: 'from-amber-500 to-orange-600'
     },
     {
       title: 'Backend Excellence',

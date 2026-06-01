@@ -9,7 +9,8 @@ const Skills: React.FC = () => {
         { name: 'React', level: 95, icon: 'UI' },
         { name: 'HTML', level: 95, icon: 'FE' },
         { name: 'JavaScript', level: 85, icon: 'JS' },
-        { name: 'Tailwind CSS', level: 92, icon: 'TW' }
+        { name: 'Tailwind CSS', level: 92, icon: 'TW' },
+        { name: 'WordPress', level: 90, icon: 'WP' }
       ]
     },
     {
@@ -23,6 +24,7 @@ const Skills: React.FC = () => {
         { name: 'Django', level: 82, icon: 'DJ' },
         { name: '.NET', level: 84, icon: '.N' },
         { name: 'PHP', level: 80, icon: 'PH' },
+        { name: 'WooCommerce', level: 86, icon: 'WC' },
         { name: 'REST APIs', level: 90, icon: 'RS' }
       ]
     },
