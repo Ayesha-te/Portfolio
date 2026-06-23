@@ -14,7 +14,6 @@ import {
   MessageCircle,
   Phone as PhoneIcon,
   Sparkles,
-  SwatchBook,
   Zap,
   type LucideIcon,
 } from "lucide-react";
@@ -820,16 +819,7 @@ function ArchiveCard({ project }: { project: Project }) {
       </div>
 
       <div className="flex flex-1 flex-col p-6">
-        <div className="flex items-start justify-between gap-4">
-          <span className="rounded-full bg-muted px-3 py-1 text-xs font-medium text-muted-foreground">
-            {project.category}
-          </span>
-          <span className="text-xs uppercase tracking-[0.18em] text-muted-foreground">
-            #{project.id}
-          </span>
-        </div>
-
-        <div className="mt-5 min-h-[7.25rem]">
+        <div className="min-h-[7.25rem]">
           <h3 className="font-display text-2xl font-semibold tracking-tight">{project.title}</h3>
           <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
             {project.description}
@@ -916,17 +906,7 @@ function GraphicCard({ project }: { project: Project }) {
       </div>
 
       <div className="flex flex-1 flex-col p-6">
-        <div className="flex items-center justify-between gap-4">
-          <span className="rounded-full bg-muted px-3 py-1 text-xs font-medium text-muted-foreground">
-            Graphics
-          </span>
-          <span className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.18em] text-muted-foreground">
-            <SwatchBook className="h-3.5 w-3.5" />
-            Visual Design
-          </span>
-        </div>
-
-        <div className="mt-5 min-h-[7rem]">
+        <div className="min-h-[7rem]">
           <h3 className="font-display text-2xl font-semibold tracking-tight">{project.title}</h3>
           <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
             {project.description}
