@@ -1,0 +1,640 @@
+export type ProjectCategory = "Client Work" | "Sample Builds" | "AI & LLM" | "Graphics";
+
+export type Project = {
+  id: number;
+  title: string;
+  description: string;
+  image: string;
+  technologies: string[];
+  liveUrl: string;
+  category: ProjectCategory;
+  features: string[];
+};
+
+export const profile = {
+  name: "Ayesha Jahangir",
+  tagline:
+    "Full Stack Developer building polished websites, e-commerce platforms, and AI-powered products.",
+  location: "Pakistan",
+  availability: "Available for freelance projects and collaborative builds",
+  email: "ayeshajahangir280@gmail.com",
+  phone: "+92 314 4217577",
+  whatsapp: "923144217577",
+  github: "https://github.com/Ayesha-te",
+  linkedin: "https://www.linkedin.com/in/ayesha-jahangir-b26744274/",
+  cvUrl: "/ayesha-jahangir-cv.pdf",
+  cvAsset: "MyCV.pdf",
+  heroImage: "ME.png",
+  heroSummary:
+    "Passionate about creating innovative web solutions and using Large Language Models to build intelligent applications that improve real user experiences.",
+  roles: ["Web Developer", "LLM Programmer", "AI Enthusiast", "Full Stack Developer"],
+  aboutTitle: "Passionate Developer and AI Enthusiast",
+  aboutBody: [
+    "I am a dedicated web developer with over 4 years of experience creating modern, scalable applications. My work spans frontend systems, business websites, e-commerce, WordPress builds, and backend development with Node.js, Express.js, MongoDB, Django, and FastAPI.",
+    "Recently, I have been going deeper into AI product work, building OpenAI and LangChain powered tools that help businesses automate workflows, search knowledge, and deliver smarter digital experiences.",
+  ],
+  stats: [
+    { value: "2+", label: "Years Experience" },
+    { value: "10+", label: "Technologies Mastered" },
+    { value: "98%", label: "Client Satisfaction" },
+    { value: "100%", label: "On-time Delivery" },
+  ],
+};
+
+export const serviceHighlights = [
+  {
+    title: "Full Stack Development",
+    description: "Expert in React, Django, JavaScript, and modern web technologies.",
+  },
+  {
+    title: "LLM Integration",
+    description: "Specialized in integrating AI models and building intelligent applications.",
+  },
+  {
+    title: "Performance Optimization",
+    description: "Focused on creating fast, scalable, and efficient web solutions.",
+  },
+  {
+    title: "Best Practices",
+    description: "Committed to clean code, testing, and continuous learning.",
+  },
+] as const;
+
+export const expertiseSlides = [
+  {
+    title: "Frontend Mastery",
+    description: "Building responsive, interactive user interfaces with modern frameworks.",
+    skills: ["React", "HTML", "Tailwind CSS", "JavaScript", "WordPress"],
+  },
+  {
+    title: "CMS and E-commerce",
+    description: "Creating content-driven business sites and online stores with WordPress tooling.",
+    skills: ["WordPress", "WooCommerce", "PHP", "Responsive Design", "Site Management"],
+  },
+  {
+    title: "Backend Excellence",
+    description: "Scalable server-side solutions and robust API development.",
+    skills: ["Node.js", "Express.js", "MongoDB", "FastAPI", "Django"],
+  },
+  {
+    title: "Desktop Development",
+    description: "Building desktop applications and working efficiently with Microsoft tooling.",
+    skills: ["Visual Studio", "Windows Forms", "C#", ".NET", "MySQL"],
+  },
+  {
+    title: "AI Integration",
+    description: "Leveraging LLMs and machine learning for intelligent applications.",
+    skills: ["OpenAI API", "LangChain", "Vector DBs", "Prompt Engineering", "APIs"],
+  },
+  {
+    title: "Additional",
+    description: "Social media marketing and graphic designing.",
+    skills: ["Campaigns", "Hashtags", "Content", "Meta", "Adobe"],
+  },
+] as const;
+
+export const skillGroups = [
+  {
+    title: "Frontend Development",
+    skills: [
+      { name: "React", level: 95, short: "UI" },
+      { name: "HTML", level: 95, short: "FE" },
+      { name: "JavaScript", level: 85, short: "JS" },
+      { name: "Tailwind CSS", level: 92, short: "TW" },
+      { name: "WordPress", level: 90, short: "WP" },
+    ],
+  },
+  {
+    title: "Backend and APIs",
+    skills: [
+      { name: "Node.js", level: 88, short: "ND" },
+      { name: "Express.js", level: 86, short: "EX" },
+      { name: "MongoDB", level: 84, short: "MG" },
+      { name: "FastAPI", level: 88, short: "API" },
+      { name: "Python", level: 85, short: "PY" },
+      { name: "Django", level: 82, short: "DJ" },
+      { name: ".NET", level: 84, short: ".N" },
+      { name: "PHP", level: 80, short: "PH" },
+      { name: "WooCommerce", level: 86, short: "WC" },
+      { name: "REST APIs", level: 90, short: "RS" },
+    ],
+  },
+  {
+    title: "Desktop and Tools",
+    skills: [
+      { name: "Visual Studio", level: 88, short: "VS" },
+      { name: "Windows Forms", level: 82, short: "WF" },
+      { name: "MySQL", level: 80, short: "DB" },
+      { name: "Git and GitHub", level: 90, short: "GH" },
+    ],
+  },
+  {
+    title: "AI and LLM",
+    skills: [
+      { name: "OpenAI API and LangChain", level: 98, short: "AI" },
+      { name: "Vector Databases", level: 85, short: "VD" },
+      { name: "Prompt Engineering", level: 90, short: "PE" },
+      { name: "ML Integration", level: 80, short: "ML" },
+    ],
+  },
+] as const;
+
+export const contactMethods = [
+  {
+    label: "Email",
+    value: profile.email,
+    href: `mailto:${profile.email}`,
+  },
+  {
+    label: "Phone",
+    value: profile.phone,
+    href: "tel:+923144217577",
+  },
+  {
+    label: "WhatsApp",
+    value: "+92 314 4217577",
+    href: `https://wa.me/${profile.whatsapp}?text=Hi%20Ayesha!%20I%20found%20your%20portfolio%20and%20would%20love%20to%20discuss%20a%20project.`,
+  },
+  {
+    label: "LinkedIn",
+    value: "ayesha-jahangir-b26744274",
+    href: profile.linkedin,
+  },
+  {
+    label: "GitHub",
+    value: "Ayesha-te",
+    href: profile.github,
+  },
+] as const;
+
+export const categoryOrder: readonly ("All" | ProjectCategory)[] = [
+  "All",
+  "Client Work",
+  "Sample Builds",
+  "AI & LLM",
+  "Graphics",
+];
+
+export const featuredProjectIds = [37, 39, 40, 38, 35, 34] as const;
+
+export const projects: Project[] = [
+  {
+    id: 37,
+    title: "Reve Living",
+    description:
+      "Built a large luxury e-commerce website for Reve Living, focused on handcrafted beds and mattresses with cookie consent, tracking integrations, and a polished shopping journey.",
+    image: "reve.png",
+    technologies: ["React", "Vite", "Cookiebot"],
+    liveUrl: "https://www.reveliving.co.uk/",
+    category: "Client Work",
+    features: [
+      "Large e-commerce storefront",
+      "Luxury beds and mattresses catalog",
+      "Cookie consent and privacy flow",
+      "Analytics-ready shopping experience",
+    ],
+  },
+  {
+    id: 38,
+    title: "Texvera",
+    description:
+      "Built a professional textile sourcing website for Texvera, connecting global brands with trusted textile manufacturers across Pakistan.",
+    image: "taxvera.png",
+    technologies: ["Business Website", "Responsive Design", "Textile Sourcing"],
+    liveUrl: "https://www.texvera.com/",
+    category: "Client Work",
+    features: [
+      "Textile sourcing brand presence",
+      "Product categories for linen, apparel, and denim",
+      "Trust-focused company messaging",
+      "Contact and inquiry journey",
+    ],
+  },
+  {
+    id: 1,
+    title: "Gotbae Agency Website",
+    description: "Made a website for GOTBAE agency.",
+    image: "GOTBAE.png",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    liveUrl: "https://www.gotbae.com/",
+    category: "Client Work",
+    features: [
+      "Modern responsive layout",
+      "Services showcase",
+      "Contact and lead capture",
+      "Fast-loading pages",
+    ],
+  },
+  {
+    id: 2,
+    title: "MOT Services Website",
+    description: "Made a website for Access auto services.",
+    image: "MOT.png",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    liveUrl: "https://www.access-auto-services.co.uk/",
+    category: "Client Work",
+    features: [
+      "Booking and services information",
+      "Mobile-friendly UI",
+      "Clear CTAs",
+      "SEO-friendly content",
+    ],
+  },
+  {
+    id: 3,
+    title: "Construction Estimation Website",
+    description: "Made a website for Genius Estimate.",
+    image: "GE.png",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    liveUrl: "https://www.geniusestimate.com/",
+    category: "Client Work",
+    features: [
+      "Service overview",
+      "Contact and inquiry flow",
+      "Responsive design",
+      "Clean navigation",
+    ],
+  },
+  {
+    id: 4,
+    title: "Nexokart",
+    description: "Made a networking and e-commerce website for Nexokart.",
+    image: "nexo.jpeg",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    liveUrl: "https://www.nexokart.shop/",
+    category: "Client Work",
+    features: [
+      "Product catalog",
+      "Shopping cart functionality",
+      "Responsive design",
+      "User-friendly interface",
+    ],
+  },
+  {
+    id: 35,
+    title: "Nexo MLM Website",
+    description: "Built a specialized multi-level marketing platform for Nexokart.",
+    image: "nexo3.png",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    liveUrl: "https://www.nexocart.online/dashboard",
+    category: "Client Work",
+    features: ["MLM dashboard", "User management", "Earnings tracking", "Network visualization"],
+  },
+  {
+    id: 5,
+    title: "Palm Homes Gujrat",
+    description: "Made a real estate website for Palm Homes Gujrat.",
+    image: "palms.jpeg",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    liveUrl: "https://www.kunjwalcity.pk/",
+    category: "Client Work",
+    features: ["Property listings", "Modern layout", "Contact forms", "Mobile responsive"],
+  },
+  {
+    id: 24,
+    title: "EVERKIND Home Support Ltd",
+    description:
+      "Developed a professional website for EVERKIND Home Support Ltd, focused on home care and support services.",
+    image: "everkind.png",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    liveUrl: "https://www.everkindhc.co.uk/",
+    category: "Client Work",
+    features: [
+      "Modern responsive layout",
+      "Care services showcase",
+      "Professional branding",
+      "Contact and support information",
+    ],
+  },
+  {
+    id: 32,
+    title: "Ultamine Pro Hub",
+    description: "Investment application for managing and tracking investments.",
+    image: "ultamine.png",
+    technologies: ["React", "Tailwind CSS", "TypeScript"],
+    liveUrl: "https://ultamine-pro-hub.vercel.app/",
+    category: "Client Work",
+    features: ["Investment tracking", "User dashboard", "Secure transactions", "Responsive design"],
+  },
+  {
+    id: 34,
+    title: "House of Serene",
+    description: "WordPress e-commerce site for high-end home decor and furniture.",
+    image: "house.png",
+    technologies: ["WordPress", "WooCommerce", "PHP"],
+    liveUrl: "https://house-of-serene.raisaaz.com/",
+    category: "Client Work",
+    features: [
+      "E-commerce functionality",
+      "WordPress powered",
+      "Product management",
+      "Secure checkout",
+    ],
+  },
+  {
+    id: 39,
+    title: "The Shard Interiors",
+    description:
+      "Luxury interiors and furniture concept site built around warm materials, editorial storytelling, and consultation-led browsing.",
+    image: "shards.png",
+    technologies: ["Luxury Interiors UI", "Editorial Storytelling", "Responsive Design"],
+    liveUrl: "https://the-shard-interiors.vercel.app/",
+    category: "Sample Builds",
+    features: [
+      "Lifestyle-based browsing experience",
+      "Editorial collections and materials sections",
+      "Warm luxury showroom presentation",
+      "Consultation request journey",
+    ],
+  },
+  {
+    id: 40,
+    title: "The Building Supplies",
+    description:
+      "Architectural materials marketplace concept for sourcing finishes, vetted suppliers, and project-ready procurement inspiration.",
+    image: "building.png",
+    technologies: ["Marketplace UI", "Catalog Design", "Material Discovery"],
+    liveUrl: "https://thebuildingsupplies-8l2h.vercel.app/",
+    category: "Sample Builds",
+    features: [
+      "Material library and category discovery",
+      "Project-type procurement journeys",
+      "Brand and supplier directory showcase",
+      "Editorial inspiration browsing",
+    ],
+  },
+  {
+    id: 6,
+    title: "Food Ordering Website",
+    description: "Food ordering website made with HTML, CSS, and JS.",
+    image: "food.png",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    liveUrl: "https://ayesha-te.github.io/food/",
+    category: "Sample Builds",
+    features: ["Menu browsing", "Add to cart UX", "Responsive design"],
+  },
+  {
+    id: 7,
+    title: "E-Shop Storefront",
+    description:
+      "Amazon-style e-commerce site with product cards, categories, cart, and user login. Fully mobile responsive.",
+    image: "store.png",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    liveUrl: "https://ayesha-te.github.io/store/",
+    category: "Sample Builds",
+    features: ["Product listing", "Categories and filters", "Cart interactions"],
+  },
+  {
+    id: 8,
+    title: "Airline Company UI",
+    description: "Custom airline company dashboard built with HTML, CSS, and JS.",
+    image: "airline.png",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    liveUrl: "https://ayesha-te.github.io/airline/",
+    category: "Sample Builds",
+    features: ["Dashboard layout", "Reusable components", "Responsive design"],
+  },
+  {
+    id: 9,
+    title: "University Website",
+    description: "University website with full academic and campus content.",
+    image: "uni.png",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    liveUrl: "https://ayesha-te.github.io/University/",
+    category: "Sample Builds",
+    features: ["Multi-page navigation", "Content sections", "Mobile responsiveness"],
+  },
+  {
+    id: 10,
+    title: "TODO App",
+    description: "Task management website for students.",
+    image: "todo.png",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    liveUrl: "https://ayesha-te.github.io/todo/",
+    category: "Sample Builds",
+    features: ["Add, edit, and delete tasks", "Local storage", "Responsive UI"],
+  },
+  {
+    id: 11,
+    title: "Brands Website",
+    description: "Made a website for brands with category-based browsing.",
+    image: "brands.png",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    liveUrl: "https://ayesha-te.github.io/webpage/",
+    category: "Sample Builds",
+    features: ["Brand categories", "Cards grid", "Responsive layout"],
+  },
+  {
+    id: 29,
+    title: "Rocket Style Forge",
+    description: "Camera-focused website showcasing products and specs.",
+    image: "j1.png",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    liveUrl: "https://rocket-style-forge.vercel.app/",
+    category: "Sample Builds",
+    features: ["Product gallery", "Responsive product pages", "Search and filters"],
+  },
+  {
+    id: 30,
+    title: "Real Estate (Virid)",
+    description: "Real estate demo showcasing listings and property details.",
+    image: "j2.png",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    liveUrl: "https://real-estate-nine-virid-74.vercel.app/",
+    category: "Sample Builds",
+    features: ["Property listings", "Contact and lead capture", "Responsive layouts"],
+  },
+  {
+    id: 31,
+    title: "RES Dusky",
+    description: "Real estate site example with modern UI and listing pages.",
+    image: "j3.png",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    liveUrl: "https://res-dusky.vercel.app/",
+    category: "Sample Builds",
+    features: ["Listings grid", "Property detail pages", "Mobile-first design"],
+  },
+  {
+    id: 12,
+    title: "AI Resume Screener",
+    description: "Automatically screens and ranks resumes using OpenAI.",
+    image: "rsum.jpg",
+    technologies: ["Python", "Streamlit", "OpenAI"],
+    liveUrl: "https://ai-resume-screener-4guwkuwhezukxr3kfmfzhg.streamlit.app/",
+    category: "AI & LLM",
+    features: [
+      "Resume parsing and ranking",
+      "Keyword and skills matching",
+      "Export shortlisted candidates",
+    ],
+  },
+  {
+    id: 13,
+    title: "AI Code Review Bot",
+    description: "Reviews code and gives improvements and scores.",
+    image: "code.jpg",
+    technologies: ["Python", "Streamlit", "OpenAI"],
+    liveUrl: "https://ai-code-review-bot-y2sxssxq5epese7wa4hdz2.streamlit.app/",
+    category: "AI & LLM",
+    features: ["Automatic code suggestions", "Style and security checks", "Quality scoring"],
+  },
+  {
+    id: 14,
+    title: "AI Customer Support Chatbot",
+    description:
+      "Smart chatbot that answers customer FAQs and general queries while reducing manual support work.",
+    image: "chatbot.jpg",
+    technologies: ["Python", "Streamlit", "OpenAI"],
+    liveUrl: "https://ai-customer-support-chatbot-zz6ph7hcgshjjhsnjwt3xn.streamlit.app/",
+    category: "AI & LLM",
+    features: ["FAQ automation", "Context-aware responses", "Custom knowledge base"],
+  },
+  {
+    id: 15,
+    title: "AI Trading Assistant",
+    description:
+      "Provides real-time stock market insights and analysis for traders and finance analysts.",
+    image: "trading.jpg",
+    technologies: ["Python", "Streamlit", "OpenAI"],
+    liveUrl: "https://legaldocanalyzer-jdxrepts3b62mc8wmi7zg4.streamlit.app/",
+    category: "AI & LLM",
+    features: ["Market insights", "Signal explanations", "Risk notes"],
+  },
+  {
+    id: 16,
+    title: "AI PDF Search Assistant",
+    description:
+      "Lets users ask questions from PDFs using LangChain and OpenAI, saving time on long documents.",
+    image: "pdf powered.jpg",
+    technologies: ["Python", "Streamlit", "LangChain", "OpenAI"],
+    liveUrl: "https://ai-powered-pdf-search-assistant-mijmxyekxjk3vy2gc34duh.streamlit.app/",
+    category: "AI & LLM",
+    features: ["Multi-PDF ingestion", "Semantic search and Q&A", "Citations from sources"],
+  },
+  {
+    id: 17,
+    title: "AI Research Assistant",
+    description:
+      "Answers research-based queries using Google Search and LLMs for students and researchers.",
+    image: "research2.jpg",
+    technologies: ["Python", "Streamlit", "OpenAI"],
+    liveUrl: "https://ai-research-assistant-bxpghc3vjtnc7dchtn2sza.streamlit.app/",
+    category: "AI & LLM",
+    features: ["Web search integration", "Source summarization", "Answer synthesis"],
+  },
+  {
+    id: 18,
+    title: "AI Legal Document Analyzer",
+    description:
+      "Simulates answers based on legal documents provided, useful for job seekers and law students.",
+    image: "ann.jpg",
+    technologies: ["Python", "Streamlit", "OpenAI"],
+    liveUrl: "https://legaldocanalyzer-2eqimkptod8qbmppb3hbho.streamlit.app/",
+    category: "AI & LLM",
+    features: ["Document ingestion", "Clause-level Q&A", "Cited answers"],
+  },
+  {
+    id: 19,
+    title: "AI LangChain AutoGPT",
+    description:
+      "Generates YouTube video titles and scripts from user input through an interactive Streamlit UI.",
+    image: "research.jpg",
+    technologies: ["Python", "Streamlit", "LangChain", "OpenAI"],
+    liveUrl: "https://langchainautogpt-3ogwsonmuencvwexagdr7x.streamlit.app/",
+    category: "AI & LLM",
+    features: ["Task decomposition", "Content generation", "Editable outputs"],
+  },
+  {
+    id: 20,
+    title: "Multi-Agent AI Assistant",
+    description:
+      "Combines multiple AI agents to answer complex queries and handle multi-step tasks.",
+    image: "q_A.jpg",
+    technologies: ["Python", "Streamlit", "OpenAI"],
+    liveUrl: "https://aiq-asystem-bugtb9xdbb6znvz26v2ufq.streamlit.app/",
+    category: "AI & LLM",
+    features: ["Specialized agents", "Tool use and planning", "Multi-step reasoning"],
+  },
+  {
+    id: 21,
+    title: "Prompt Engineering Playground",
+    description:
+      "Tests and tweaks prompts in real time to teach prompt engineering using OpenAI and Streamlit.",
+    image: "prompt.jpg",
+    technologies: ["Python", "Streamlit", "OpenAI"],
+    liveUrl: "https://promptplayground-kycfjb4ta7zagdtnfn7nyd.streamlit.app/",
+    category: "AI & LLM",
+    features: ["Prompt templates", "Real-time evaluation", "History and comparisons"],
+  },
+  {
+    id: 22,
+    title: "Company Future Predictor",
+    description:
+      "Predicts company trends and insights with AI-powered analysis to support better business decisions.",
+    image: "trading.jpg",
+    technologies: ["Python", "Streamlit", "OpenAI"],
+    liveUrl: "https://dyanyrpkmewmpxucjujcov.streamlit.app/",
+    category: "AI & LLM",
+    features: ["Future trend analysis", "Business insights", "Data-driven predictions"],
+  },
+  {
+    id: 23,
+    title: "Room Graphic Design",
+    description: "Promotional room design concept.",
+    image: "adss.jpg",
+    technologies: ["Photoshop", "Illustrator"],
+    liveUrl: "#",
+    category: "Graphics",
+    features: ["Branding", "Poster and flyer layout", "High-res export"],
+  },
+  {
+    id: 36,
+    title: "KFC Marketing Banner",
+    description: "Fast-food promotional graphic for KFC.",
+    image: "kfc.jpg",
+    technologies: ["Photoshop", "Illustrator"],
+    liveUrl: "#",
+    category: "Graphics",
+    features: ["Food photography composition", "Bold CTAs", "Print-ready design"],
+  },
+  {
+    id: 25,
+    title: "Marketing 2Design",
+    description: "Retail market promotional visual.",
+    image: "market 2.jpg",
+    technologies: ["Photoshop", "Illustrator"],
+    liveUrl: "#",
+    category: "Graphics",
+    features: ["Product highlights", "Price tags and badges", "Responsive social sizes"],
+  },
+  {
+    id: 26,
+    title: "Market Design",
+    description: "Alternate retail market creative variation.",
+    image: "market (2).jpg",
+    technologies: ["Photoshop", "Illustrator"],
+    liveUrl: "#",
+    category: "Graphics",
+    features: ["Variant layout", "Color theme exploration", "High clarity typography"],
+  },
+  {
+    id: 27,
+    title: "Furniture Catalog",
+    description: "Elegant furniture catalog spread.",
+    image: "Furniture.jpg",
+    technologies: ["Photoshop", "Illustrator"],
+    liveUrl: "#",
+    category: "Graphics",
+    features: ["Lifestyle mockups", "Clean typography", "Print-ready assets"],
+  },
+  {
+    id: 28,
+    title: "Stationary Set",
+    description: "Stationary set design concept.",
+    image: "Stationary.jpg",
+    technologies: ["Photoshop", "Illustrator"],
+    liveUrl: "#",
+    category: "Graphics",
+    features: ["Letterhead and cards", "Brand consistency", "High-res export"],
+  },
+];
