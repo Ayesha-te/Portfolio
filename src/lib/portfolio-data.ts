@@ -175,9 +175,57 @@ export const categoryOrder: readonly ("All" | ProjectCategory)[] = [
   "Graphics",
 ];
 
-export const featuredProjectIds = [37, 39, 40, 38, 35, 34] as const;
+export const featuredProjectIds = [41, 37, 39, 40, 38, 35, 34] as const;
 
 export const projects: Project[] = [
+  {
+    id: 43,
+    title: "ERP Project",
+    description:
+      "ERP software project for managing business operations, internal workflows, records, and reporting in one organized system.",
+    image: "erp.png",
+    technologies: ["ERP Software", "Dashboard", "Business Management"],
+    liveUrl: "#",
+    category: "Client Work",
+    features: [
+      "Business operations dashboard",
+      "Internal workflow management",
+      "Records and reporting tools",
+      "Centralized data management",
+    ],
+  },
+  {
+    id: 42,
+    title: "Cricket Auction Project",
+    description:
+      "Auction project for cricket teams, designed to manage player bidding, team budgets, and live auction activity.",
+    image: "auction.png",
+    technologies: ["Cricket Auction", "Team Bidding", "Dashboard"],
+    liveUrl: "#",
+    category: "Client Work",
+    features: [
+      "Player auction management",
+      "Team budget tracking",
+      "Live bidding workflow",
+      "Cricket team selection process",
+    ],
+  },
+  {
+    id: 41,
+    title: "CreaseLive Cricket Software",
+    description:
+      "Cricket software with dedicated umpire, audience, and broadcast screens for managing live match experiences.",
+    image: "Cricket.png",
+    technologies: ["Cricket Software", "Live Scoring", "Broadcast Screen"],
+    liveUrl: "https://creaselive.stride-events.net/",
+    category: "Client Work",
+    features: [
+      "Umpire screen for match control",
+      "Audience display experience",
+      "Broadcast-ready scoring screen",
+      "Live cricket event workflow",
+    ],
+  },
   {
     id: 37,
     title: "Reve Living",
