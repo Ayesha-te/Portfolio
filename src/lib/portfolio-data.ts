@@ -14,9 +14,9 @@ export type Project = {
 export const profile = {
   name: "Ayesha Jahangir",
   tagline:
-    "Full Stack Developer building polished websites, e-commerce platforms, and AI-powered products.",
-  location: "Pakistan",
-  availability: "Available for freelance projects and collaborative builds",
+    "Full Stack Developer & AI Engineer — building products that solve real problems for real businesses.",
+  location: "Pakistan · Working remotely with clients in UAE, UK & worldwide",
+  availability: "Available for remote projects and long-term collaborations",
   email: "ayeshajahangir280@gmail.com",
   phone: "+92 314 4217577",
   whatsapp: "923144217577",
@@ -26,37 +26,38 @@ export const profile = {
   cvAsset: "MyCV.pdf",
   heroImage: "ME.png",
   heroSummary:
-    "Passionate about creating innovative web solutions and using Large Language Models to build intelligent applications that improve real user experiences.",
-  roles: ["Web Developer", "LLM Programmer", "AI Enthusiast", "Full Stack Developer"],
-  aboutTitle: "Passionate Developer and AI Enthusiast",
+    "I build web applications and AI-powered tools that help businesses save time, reduce manual work, and grow online. With clients in the UAE and UK, I combine technical depth with a real understanding of business operations.",
+  roles: ["Full Stack Developer", "AI Engineer", "ERP Builder", "Product Developer"],
+  aboutTitle: "Developer, Builder, and Product Owner",
   aboutBody: [
-    "I am a dedicated web developer with over 4 years of experience creating modern, scalable applications. My work spans frontend systems, business websites, e-commerce, WordPress builds, and backend development with Node.js, Express.js, MongoDB, Django, and FastAPI.",
-    "Recently, I have been going deeper into AI product work, building OpenAI and LangChain powered tools that help businesses automate workflows, search knowledge, and deliver smarter digital experiences.",
+    "I am a full stack developer with over 4 years of experience building production-grade applications — from luxury e-commerce stores for UK clients to ERP systems running live in real businesses. My work spans frontend, backend, WordPress, and complex business systems built with Django, React, Node.js, and PostgreSQL.",
+    "What sets me apart is that I build and run my own products. BakeryFlow ERP started as a solution for my own bakery business and is now a fully featured system handling purchases, production, inventory, and sales. I understand the problems I solve because I have lived them — and that makes the difference between software that gets used and software that sits unused.",
+    "On the AI side, I build practical tools using OpenAI and LangChain — not demos, but real applications that automate workflows, analyze documents, and reduce the manual work that slows businesses down.",
   ],
   stats: [
-    { value: "2+", label: "Years Experience" },
-    { value: "10+", label: "Technologies Mastered" },
-    { value: "98%", label: "Client Satisfaction" },
-    { value: "100%", label: "On-time Delivery" },
+    { value: "4+", label: "Years Experience" },
+    { value: "42+", label: "Projects Delivered" },
+    { value: "UAE & UK", label: "Client Markets" },
+    { value: "Live", label: "Own Product Running" },
   ],
 };
 
 export const serviceHighlights = [
   {
     title: "Full Stack Development",
-    description: "Expert in React, Django, JavaScript, and modern web technologies.",
+    description: "Production-grade applications built with React, Django, Node.js, and PostgreSQL — from e-commerce stores to complex business platforms.",
   },
   {
-    title: "LLM Integration",
-    description: "Specialized in integrating AI models and building intelligent applications.",
+    title: "ERP & Accounting Systems",
+    description: "Custom ERP software for businesses — purchase management, inventory, production tracking, sales invoicing, and financial reporting built to match real workflows.",
   },
   {
-    title: "Performance Optimization",
-    description: "Focused on creating fast, scalable, and efficient web solutions.",
+    title: "AI & LLM Integration",
+    description: "Practical AI tools using OpenAI and LangChain — receipt scanning, document analysis, smart alerts — that automate real tasks, not just demos.",
   },
   {
-    title: "Best Practices",
-    description: "Committed to clean code, testing, and continuous learning.",
+    title: "E-Commerce & Business Websites",
+    description: "High-converting websites and online stores for UK, UAE, and international clients, with GDPR compliance, analytics, and polished UX.",
   },
 ] as const;
 
@@ -175,23 +176,27 @@ export const categoryOrder: readonly ("All" | ProjectCategory)[] = [
   "Graphics",
 ];
 
-export const featuredProjectIds = [41, 37, 39, 40, 38, 35, 34] as const;
+export const featuredProjectIds = [43, 41, 37, 39, 40, 38, 35] as const;
 
 export const projects: Project[] = [
   {
     id: 43,
-    title: "ERP Project",
+    title: "BakeryFlow ERP & Accounting System",
     description:
-      "ERP software project for managing business operations, internal workflows, records, and reporting in one organized system.",
+      "Full-scale ERP and accounting system built for bakery and food production businesses. Covers the entire business cycle — from supplier invoices and recipe-based production to multi-location inventory, weighted-average costing, and sales invoicing. Built with Django and React, running live in a real business. Includes AI-powered receipt scanning and smart reorder alerts.",
     image: "erp.png",
-    technologies: ["ERP Software", "Dashboard", "Business Management"],
+    technologies: ["Django", "React", "PostgreSQL", "OpenAI API", "REST APIs", "ERP"],
     liveUrl: "#",
     category: "Client Work",
     features: [
-      "Business operations dashboard",
-      "Internal workflow management",
-      "Records and reporting tools",
-      "Centralized data management",
+      "Supplier & customer management with full purchase invoice workflow",
+      "Recipe-based production — raw materials consumed, finished goods posted automatically",
+      "Multi-location inventory with weighted-average costing",
+      "Sales invoicing with stock deduction and customer aging",
+      "AI receipt scanner — scan paper invoices with GPT-4o Vision, auto-fill purchase forms",
+      "Smart reorder alerts — flags items running low based on 30-day consumption history",
+      "Role-based access control and full audit trail",
+      "Profit & loss, stock valuation, and business reporting",
     ],
   },
   {
@@ -214,48 +219,51 @@ export const projects: Project[] = [
     id: 41,
     title: "CreaseLive Cricket Software",
     description:
-      "Cricket software with dedicated umpire, audience, and broadcast screens for managing live match experiences.",
+      "Full live cricket event management platform built for tournament organizers. Dedicated screens for umpires, audiences, and broadcast teams — all updating in real time from a single scoring interface. Deployed and used in live cricket events.",
     image: "Cricket.png",
-    technologies: ["Cricket Software", "Live Scoring", "Broadcast Screen"],
+    technologies: ["React", "Real-Time Updates", "WebSockets", "Live Scoring"],
     liveUrl: "https://creaselive.stride-events.net/",
     category: "Client Work",
     features: [
-      "Umpire screen for match control",
-      "Audience display experience",
-      "Broadcast-ready scoring screen",
-      "Live cricket event workflow",
+      "Umpire control screen for match input and management",
+      "Audience-facing live scoreboard with real-time updates",
+      "Broadcast-ready display screen for event production teams",
+      "Ball-by-ball scoring with over and innings management",
+      "Multi-screen sync from a single scoring interface",
     ],
   },
   {
     id: 37,
-    title: "Reve Living",
+    title: "Reve Living — UK Luxury E-Commerce",
     description:
-      "Built a large luxury e-commerce website for Reve Living, focused on handcrafted beds and mattresses with cookie consent, tracking integrations, and a polished shopping journey.",
+      "Built a full luxury e-commerce website for a UK-based handcrafted beds and mattresses brand. Polished shopping experience with GDPR-compliant cookie consent, analytics tracking, and a product catalog designed for high-value purchases. Live and trading in the UK market.",
     image: "reve.png",
-    technologies: ["React", "Vite", "Cookiebot"],
+    technologies: ["React", "Vite", "Cookiebot", "GDPR", "E-Commerce"],
     liveUrl: "https://www.reveliving.co.uk/",
     category: "Client Work",
     features: [
-      "Large e-commerce storefront",
-      "Luxury beds and mattresses catalog",
-      "Cookie consent and privacy flow",
-      "Analytics-ready shopping experience",
+      "Full e-commerce store for luxury beds and mattresses",
+      "GDPR-compliant Cookiebot consent management",
+      "Analytics-ready with tracking integrations",
+      "High-converting product detail pages with lifestyle imagery",
+      "Mobile-optimized shopping journey built for UK customers",
     ],
   },
   {
     id: 38,
-    title: "Texvera",
+    title: "Texvera — Textile Sourcing Platform",
     description:
-      "Built a professional textile sourcing website for Texvera, connecting global brands with trusted textile manufacturers across Pakistan.",
+      "Built a B2B website for a Pakistan-based textile sourcing company serving global fashion and retail brands. Clean, trust-focused design that positions Texvera as the bridge between international buyers and verified Pakistani manufacturers across linen, denim, and apparel.",
     image: "taxvera.png",
-    technologies: ["Business Website", "Responsive Design", "Textile Sourcing"],
+    technologies: ["React", "Business Website", "B2B", "Responsive Design"],
     liveUrl: "https://www.texvera.com/",
     category: "Client Work",
     features: [
-      "Textile sourcing brand presence",
-      "Product categories for linen, apparel, and denim",
-      "Trust-focused company messaging",
-      "Contact and inquiry journey",
+      "B2B brand identity for international textile buyers",
+      "Product category pages for linen, apparel, knitwear, and denim",
+      "Trust signals and manufacturer credibility section",
+      "Inquiry and sourcing request flow",
+      "Fully responsive, optimized for desktop business users",
     ],
   },
   {
@@ -320,13 +328,20 @@ export const projects: Project[] = [
   },
   {
     id: 35,
-    title: "Nexo MLM Website",
-    description: "Built a specialized multi-level marketing platform for Nexokart.",
+    title: "Nexo MLM Platform",
+    description:
+      "Built a full multi-level marketing platform with member dashboards, downline tracking, and earnings calculations. Members can view their referral network, track bonuses, and manage their team — all in a live, deployed system.",
     image: "nexo3.png",
-    technologies: ["HTML", "CSS", "JavaScript"],
+    technologies: ["HTML", "CSS", "JavaScript", "Dashboard"],
     liveUrl: "https://www.nexocart.online/dashboard",
     category: "Client Work",
-    features: ["MLM dashboard", "User management", "Earnings tracking", "Network visualization"],
+    features: [
+      "Member dashboard with earnings and referral overview",
+      "Downline network visualization and team management",
+      "Commission and bonus calculation system",
+      "User registration and referral link tracking",
+      "Admin controls for member and payout management",
+    ],
   },
   {
     id: 5,
@@ -574,12 +589,18 @@ export const projects: Project[] = [
     id: 18,
     title: "AI Legal Document Analyzer",
     description:
-      "Simulates answers based on legal documents provided, useful for job seekers and law students.",
+      "Upload any legal document and ask questions about it in plain language — the AI reads the full document, finds the relevant clauses, and gives cited answers. Built for lawyers, legal professionals, and businesses dealing with contracts, agreements, and legal paperwork. Saves hours of manual document review.",
     image: "ann.jpg",
-    technologies: ["Python", "Streamlit", "OpenAI"],
+    technologies: ["Python", "Streamlit", "OpenAI", "LangChain"],
     liveUrl: "https://legaldocanalyzer-2eqimkptod8qbmppb3hbho.streamlit.app/",
     category: "AI & LLM",
-    features: ["Document ingestion", "Clause-level Q&A", "Cited answers"],
+    features: [
+      "Upload contracts, agreements, or legal documents in PDF format",
+      "Ask questions in plain language — AI finds and cites the relevant clauses",
+      "Clause-level analysis with source references",
+      "Identify obligations, deadlines, and risk terms without reading the full document",
+      "Useful for legal professionals, businesses, and anyone reviewing contracts",
+    ],
   },
   {
     id: 19,
