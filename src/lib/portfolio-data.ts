@@ -185,8 +185,8 @@ export const projects: Project[] = [
     description:
       "Full-scale ERP and accounting system built for bakery and food production businesses. Covers the entire business cycle — from supplier invoices and recipe-based production to multi-location inventory, weighted-average costing, and sales invoicing. Built with Django and React, running live in a real business. Includes AI-powered receipt scanning and smart reorder alerts.",
     image: "erp.png",
-    technologies: ["Django", "React", "PostgreSQL", "OpenAI API", "REST APIs", "ERP"],
-    liveUrl: "#",
+    technologies: ["Django", "React", "PostgreSQL", "Tesseract OCR", "REST APIs", "ERP"],
+    liveUrl: "https://bakemaster-erp.vercel.app/",
     category: "Client Work",
     features: [
       "Supplier & customer management with full purchase invoice workflow",
